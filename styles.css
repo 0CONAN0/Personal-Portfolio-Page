@@ -1,0 +1,314 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    font-family: "Orbitron", serif;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #fffffffe;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Navbar List */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Nav Links */
+.navLink {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: large;
+    padding: 5px 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Bottom Border Animation for Nav Links */
+.navLink::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+/* On Hover: Expand the Border */
+.navLink:hover::after {
+    width: 100%;
+}
+
+/* Logo */
+
+#imgLogo{
+    width: 150px;
+    padding: 15px;
+}
+
+/* Hamburger Icon (Hidden by default) */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Hero Section Styles */
+#hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 1px 5vw 0;
+    gap: 40px;
+}
+
+.hero-content {
+    padding-top: 20px;
+}
+
+#theBigText {
+    font-size: 8vw;
+    line-height: 1;
+    margin-bottom: 30px;
+    background: linear-gradient(45deg, #000, #0e403e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Video Section Styles */
+.video-section {
+    position: relative;
+    padding-top: 20px;
+}
+
+#vidContainer {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    transform: perspective(1000px) rotateY(-10deg);
+    transition: transform 0.5s ease;
+}
+
+#vidContainer:hover {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+#heroVid {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+#videoTitle {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: right;
+    opacity: 0.7;
+}
+
+/* Text Content Styles */
+#heroSubText {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 30px 0;
+    max-width: 500px;
+    animation: slideUp 1s ease-out;
+}
+
+/* Button Styles */
+#lmBtn {
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-family: "Orbitron", serif;
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+#lmBtn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+#lmBtn:hover::after {
+    width: 100%;
+}
+
+#arrowIcon {
+    margin-left: 10px;
+    transition: margin-left 0.2s ease;
+}
+
+#lmBtn:hover #arrowIcon {
+    margin-left: 16px;
+}
+
+/* Social Media Section Styles */
+#social-section {
+    margin-top: 60px;
+}
+
+#socials-sub {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: #000;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    padding-right: 10px;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+
+h4{
+    text-align: end;
+    position: relative;
+    bottom: 8rem;
+    right: 3rem;
+    letter-spacing: 0.3rem;
+}
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    #hero {
+        grid-template-columns: 1fr;
+        padding-top: 60px;
+    }
+
+    .video-section {
+        order: -1;
+    }
+
+    #theBigText {
+        font-size: 12vw;
+        text-align: center;
+    }
+
+    #heroSubText {
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    #lmBtn {
+        display: block;
+        margin: 30px auto;
+    }
+
+    #social-section {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    #vidContainer {
+        transform: none;
+    }
+
+    #heroSubText {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+}
