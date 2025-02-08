@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,64 +9,274 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="#" id="logo"><img src="Media/Untitled image (8).png" alt="" id="imgLogo"></a>
-            <ul class="nav-links">
-                <li><a href="#" class="navLink">About Me</a></li>
-                <li><a href="#" class="navLink">Projects</a></li>
-                <li><a href="#" class="navLink">Contact</a></li>
-            </ul>
-            <div class="hamburger" onclick="toggleMenu()">☰</div>
-        </nav>
-    </header>
 
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h1 id="theBigText">CONAN</h1>
-                <p id="heroSubText">
-                    Creative web developer passionate about building stunning and functional digital experiences.
-                </p>
-                <button id="lmBtn">
-                    Learn more 
-                    <span id="arrowIcon">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </span>
-                </button>
-                <div id="social-section">
-                    <p id="socials-sub">Tap Into My World :</p>
-                    <div class="social-links">
-                        <a href="https://facebook.com" target="_blank" class="social-icon facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://twitter.com" target="_blank" class="social-icon twitter">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
-                        <a href="https://instagram.com" target="_blank" class="social-icon instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
+<body>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <header>
+                <nav class="navbar">
+                    <a href="#" id="logo"><img src="Media/Untitled image (8).png" alt="" id="imgLogo"></a>
+                    <ul class="nav-links">
+                        <li><a href="#" class="navLink">About Me</a></li>
+                        <li><a href="#" class="navLink">Projects</a></li>
+                        <li><a href="#" class="navLink">Contact</a></li>
+                    </ul>
+                    <div class="hamburger" onclick="toggleMenu()">☰</div>
+                </nav>
+            </header>
+
+            <main>
+                <section id="hero">
+                    <div class="hero-content">
+                        <h1 id="theBigText">CONAN</h1>
+                        <p id="heroSubText">
+                            Creative web developer passionate about building stunning and functional digital
+                            experiences.
+                        </p>
+                        <button id="lmBtn">
+                            Learn more
+                            <span id="arrowIcon">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </button>
+                        <div id="social-section">
+                            <p id="socials-sub">Tap Into My World :</p>
+                            <div class="social-links">
+                                <a href="https://facebook.com" target="_blank" class="social-icon facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" class="social-icon twitter">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                                <a href="https://instagram.com" target="_blank" class="social-icon instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-section">
+                        <div id="vidContainer">
+                            <video src="Media/3129957-uhd_2560_1440_25fps.mp4" id="heroVid" autoplay muted loop></video>
+                            <p id="videoTitle">Lost my mind <br> Showreel (23-25)</p>
+                        </div>
+                    </div>
+                </section>
+                <h4 id="scroll">(Scroll)</h4>
+            </main>
+            <section class="projects">
+                <div class="project-container">
+                    <img src="Media/pexels-pixabay-60504.jpg" alt="Project Image" class="project-images">
+                    <h4>Project Title</h4>
+                    <p>Published since (20-25)</p>
+                    <button>Take a look <span class="arrowIcon">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span></button>
+                </div>
+                <div class="project-container">
+                    <img src="Media/pexels-pixabay-60504.jpg" alt="Project Image" class="project-images">
+                    <h4>Project Title</h4>
+                    <p>Published since (20-25)</p>
+                    <button>Take a look <span class="arrowIcon">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span></button>
+                </div>
+                <div class="project-container">
+                    <img src="Media/pexels-pixabay-60504.jpg" alt="Project Image" class="project-images">
+                    <h4>Project Title</h4>
+                    <p>Published since (20-25)</p>
+                    <button>Take a look <span class="arrowIcon">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span></button>
+                </div>
+                <div class="project-container">
+                    <img src="Media/pexels-pixabay-60504.jpg" alt="Project Image" class="project-images">
+                    <h4>Project Title</h4>
+                    <p>Published since (20-25)</p>
+                    <button>Take a look <span class="arrowIcon">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span></button>
+                </div>
+                <div class="project-container">
+                    <img src="Media/pexels-pixabay-60504.jpg" alt="Project Image" class="project-images">
+                    <h4>Project Title</h4>
+                    <p>Published since (20-25)</p>
+                    <button>Take a look <span class="arrowIcon">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span></button>
+                </div>
+                <div class="project-container">
+                    <img src="Media/pexels-pixabay-60504.jpg" alt="Project Image" class="project-images">
+                    <h4>Project Title</h4>
+                    <p>Published since (20-25)</p>
+                    <button>Take a look <span class="arrowIcon">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span></button>
+                </div>
+                <div class="project-container">
+                    <img src="Media/pexels-pixabay-60504.jpg" alt="Project Image" class="project-images">
+                    <h4>Project Title</h4>
+                    <p>Published since (20-25)</p>
+                    <button>Take a look <span class="arrowIcon">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span></button>
+                </div>
+                <div class="project-container">
+                    <img src="Media/pexels-pixabay-60504.jpg" alt="Project Image" class="project-images">
+                    <h4>Project Title</h4>
+                    <p>Published since (20-25)</p>
+                    <button>Take a look <span class="arrowIcon">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span></button>
+                </div>
+            </section>
+
+            <h4 id="skills-title">(SKILLS)</h4>
+
+            <section class="skillbar-section">
+                <div class="skill-bar">
+                    <div class="skills">
+                        <img src="Media/html.svg" alt="" class="theSkill">
+                        <img src="Media/css.svg" alt="" class="theSkill">
+                        <img src="Media/javascript.svg" alt="" class="theSkill">
+                        <img src="Media/nodejs.svg" alt="" class="theSkill">
+                        <img src="Media/bootstrap.svg" alt="" class="theSkill">
+                        <img src="Media/flutter.svg" alt="" class="theSkill">
+                        <img src="Media/git.svg" alt="" class="theSkill">
+                        <img src="Media/python.svg" alt="" class="theSkill">
+                        <img src="Media/sass.svg" alt="" class="theSkill">
+
+                        <!-- Duplicate images for seamless looping -->
+                        <img src="Media/html.svg" alt="" class="theSkill">
+                        <img src="Media/css.svg" alt="" class="theSkill">
+                        <img src="Media/javascript.svg" alt="" class="theSkill">
+                        <img src="Media/nodejs.svg" alt="" class="theSkill">
+                        <img src="Media/bootstrap.svg" alt="" class="theSkill">
+                        <img src="Media/flutter.svg" alt="" class="theSkill">
+                        <img src="Media/git.svg" alt="" class="theSkill">
+                        <img src="Media/python.svg" alt="" class="theSkill">
+                        <img src="Media/html.svg" alt="" class="theSkill">
+                        <img src="Media/css.svg" alt="" class="theSkill">
+                        <img src="Media/javascript.svg" alt="" class="theSkill">
+                        <img src="Media/nodejs.svg" alt="" class="theSkill">
+                        <img src="Media/bootstrap.svg" alt="" class="theSkill">
+                        <img src="Media/flutter.svg" alt="" class="theSkill">
+                        <img src="Media/git.svg" alt="" class="theSkill">
+                        <img src="Media/python.svg" alt="" class="theSkill">
+                        <img src="Media/html.svg" alt="" class="theSkill">
+                        <img src="Media/css.svg" alt="" class="theSkill">
+                        <img src="Media/javascript.svg" alt="" class="theSkill">
+                        <img src="Media/nodejs.svg" alt="" class="theSkill">
+                        <img src="Media/bootstrap.svg" alt="" class="theSkill">
+                        <img src="Media/flutter.svg" alt="" class="theSkill">
+                        <img src="Media/git.svg" alt="" class="theSkill">
+                        <img src="Media/python.svg" alt="" class="theSkill">
+                        <img src="Media/html.svg" alt="" class="theSkill">
+                        <img src="Media/css.svg" alt="" class="theSkill">
+                        <img src="Media/javascript.svg" alt="" class="theSkill">
+                        <img src="Media/nodejs.svg" alt="" class="theSkill">
+                        <img src="Media/bootstrap.svg" alt="" class="theSkill">
+                        <img src="Media/flutter.svg" alt="" class="theSkill">
+                        <img src="Media/git.svg" alt="" class="theSkill">
+                        <img src="Media/python.svg" alt="" class="theSkill">
+
                     </div>
                 </div>
-            </div>
-            <div class="video-section">
-                <div id="vidContainer">
-                    <video src="Media/3129957-uhd_2560_1440_25fps.mp4" id="heroVid" autoplay muted loop></video>
-                    <p id="videoTitle">Lost my mind <br> Showreel (23-25)</p>
-                </div>
-            </div>
-        </section>
-        <h4>(Scroll)</h4>
-    </main>
+            </section>
 
-    <script>
-        function toggleMenu() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        }
+            <footer class="footer" role="contentinfo">
+                <div class="footer-container">
+                    <div class="footer-section footer-branding">
+                        <a href="#" class="footer-logo" aria-label="Return to homepage">
+                            <h2 class="logo-text">Ahmed Abdelhameed</h2>
+                        </a>
+                        <p class="tagline">Building the future, one line of code at a time.</p>
+                        <div class="footer-newsletter">
+                            <h3>Stay Updated</h3>
+                            <form class="newsletter-form" aria-label="Newsletter signup">
+                                <div class="input-group">
+                                    <input type="email" placeholder="Enter your email" aria-label="Email address"
+                                        required>
+                                    <button type="submit" class="btn-subscribe">
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="footer-section footer-links">
+                        <h3>Quick Links</h3>
+                        <nav class="footer-nav" aria-label="Footer navigation">
+                            <ul class="footer-menu">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="footer-section footer-contact">
+                        <h3>Get in Touch</h3>
+                        <address class="contact-info">
+                            <p>
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:your@email.com" class="email-link">abdelhameed626@gmail.com</a>
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                <span>Mansoura, Mit Mahmoud</span>
+                            </p>
+                        </address>
+
+                        <div class="social-links" aria-label="Social media links">
+                            <a href="#" class="social-link" aria-label="GitHub Profile">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn Profile">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="X Profile">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram Profile">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <p class="copyright">
+                            &copy; <span id="currentYear">2025</span> YourName. All rights reserved.
+                        </p>
+                        <nav class="legal-links" aria-label="Legal links">
+                            <a href="/privacy">Privacy Policy</a>
+                            <a href="/terms">Terms of Use</a>
+                            <a href="/cookies">Cookie Policy</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <button id="scrollToTop" class="scroll-top-btn" aria-label="Scroll to top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollSmoother.min.js"></script>
+    <script src="script.js">
     </script>
 </body>
+
 </html>
