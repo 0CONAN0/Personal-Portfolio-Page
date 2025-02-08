@@ -277,9 +277,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.project-container button:hover {
-    color: #fff;
-}
+
 
 .arrowIcon {
     margin-left: 8px;
